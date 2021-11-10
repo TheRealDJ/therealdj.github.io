@@ -9,7 +9,7 @@ git clone https://github.com/espressif/arduino-esp32.git arduino
 cd arduino
 git submodule update --init --recursive
 cd ../..
-./install.sh
+. export.sh
 ```
 
 # Install IDF and Arduino ESP32 from commit id
@@ -25,4 +25,19 @@ git checkout 16a9cf781fafffedd70b794beed24853965d78ce
 git submodule update --init --recursive
 cd ../..
 ./install.sh
+```
+
+# Enable IDF
+```
+cd esp-idf
+. export.sh
+```
+Now you can use the ```idf.py``` command
+
+# Test IDF/Arduino environment
+ - I created a template for an Arduino as a component project. The ```sdkconfig``` file may need to be adjusted to fit your project's needs
+```
+git clone https://github.com/esp-idf-arduino-template
+cd esp-idf-arduino-template
+idf.py build
 ```

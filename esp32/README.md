@@ -16,11 +16,12 @@ cd ../..
  - Use this if the latest versions don't work together
 ```
 git clone https://github.com/espressif/esp-idf.git
+cd esp-idf
 git checkout 6a7d83af1984b93ebaefa7ca9be36304806c3dc8
-cd esp-idf/components
+cd components
 git clone https://github.com/espressif/arduino-esp32.git arduino
-git checkout 16a9cf781fafffedd70b794beed24853965d78ce
 cd arduino
+git checkout 16a9cf781fafffedd70b794beed24853965d78ce
 git submodule update --init --recursive
 cd ../..
 ./install.sh

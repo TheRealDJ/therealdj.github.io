@@ -37,7 +37,7 @@ cd esp-idf
 Now you can use the ```idf.py``` command
 
 # Test IDF/Arduino environment
- - I created a template for an Arduino as a component project. The ```sdkconfig``` file may need to be adjusted to fit your project's needs
+ - I created a template for an Arduino as a component project. The ```sdkconfig``` file may need to be adjusted to fit your project's needs. See [https://github.com/TheRealDJ/esp-idf-arduino-template](https://github.com/TheRealDJ/esp-idf-arduino-template) for details
 
 ```
 git clone https://github.com/esp-idf-arduino-template
